@@ -41,15 +41,6 @@
                                     <action selector="coffee:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="roG-yq-E19"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2t-XF-Qdb">
-                                <rect key="frame" x="114" y="54" width="93" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainImage" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-wz-hjL">
-                                <rect key="frame" x="50" y="134" width="220" height="299"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgW-zy-OLz">
                                 <rect key="frame" x="128" y="466" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -82,7 +73,6 @@
                         <outlet property="coffeeKitty" destination="WeE-6U-l4H" id="3Rz-ql-K5x"/>
                         <outlet property="firstMessage" destination="Bev-i8-43X" id="Abi-nT-xqy"/>
                         <outlet property="secondMessage" destination="zg1-Iz-fzo" id="c1B-wF-etL"/>
-                        <outlet property="showImage" destination="Azt-wz-hjL" id="rhN-Vg-oYQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -90,9 +80,6 @@
             <point key="canvasLocation" x="202.66666666666666" y="300.09333333333325"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="mainImage" width="1152" height="768"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
