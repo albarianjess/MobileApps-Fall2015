@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var happyText: UILabel!
     @IBOutlet weak var sadText: UILabel!
