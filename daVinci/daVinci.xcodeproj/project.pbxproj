@@ -7,46 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7DE94FDD1B96005800874BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE94FDC1B96005800874BEF /* AppDelegate.swift */; };
-		7DE94FDF1B96005800874BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE94FDE1B96005800874BEF /* ViewController.swift */; };
-		7DE94FE21B96005900874BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE94FE01B96005900874BEF /* Main.storyboard */; };
-		7DE94FE41B96005900874BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE94FE31B96005900874BEF /* Images.xcassets */; };
-		7DE94FE71B96005900874BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DE94FE51B96005900874BEF /* LaunchScreen.xib */; };
-		7DE94FF31B96005900874BEF /* daVinciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE94FF21B96005900874BEF /* daVinciTests.swift */; };
+		7D0E42E31B9A667B00ECB267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E42E21B9A667B00ECB267 /* AppDelegate.swift */; };
+		7D0E42E51B9A667B00ECB267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E42E41B9A667B00ECB267 /* ViewController.swift */; };
+		7D0E42E81B9A667C00ECB267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E42E61B9A667C00ECB267 /* Main.storyboard */; };
+		7D0E42EA1B9A667C00ECB267 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E42E91B9A667C00ECB267 /* Images.xcassets */; };
+		7D0E42ED1B9A667C00ECB267 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E42EB1B9A667C00ECB267 /* LaunchScreen.xib */; };
+		7D0E42F91B9A667D00ECB267 /* daVinciTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0E42F81B9A667D00ECB267 /* daVinciTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7DE94FED1B96005900874BEF /* PBXContainerItemProxy */ = {
+		7D0E42F31B9A667D00ECB267 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7DE94FCF1B96005800874BEF /* Project object */;
+			containerPortal = 7D0E42D51B9A667900ECB267 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7DE94FD61B96005800874BEF;
+			remoteGlobalIDString = 7D0E42DC1B9A667A00ECB267;
 			remoteInfo = daVinci;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7DE94FD71B96005800874BEF /* daVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DE94FDB1B96005800874BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DE94FDC1B96005800874BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DE94FDE1B96005800874BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7DE94FE11B96005900874BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7DE94FE31B96005900874BEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7DE94FE61B96005900874BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7DE94FEC1B96005900874BEF /* daVinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daVinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DE94FF11B96005900874BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DE94FF21B96005900874BEF /* daVinciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daVinciTests.swift; sourceTree = "<group>"; };
+		7D0E42DD1B9A667B00ECB267 /* daVinci.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daVinci.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0E42E11B9A667B00ECB267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0E42E21B9A667B00ECB267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D0E42E41B9A667B00ECB267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D0E42E71B9A667C00ECB267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D0E42E91B9A667C00ECB267 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7D0E42EC1B9A667C00ECB267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7D0E42F21B9A667D00ECB267 /* daVinciTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daVinciTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0E42F71B9A667D00ECB267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D0E42F81B9A667D00ECB267 /* daVinciTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daVinciTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DE94FD41B96005800874BEF /* Frameworks */ = {
+		7D0E42DA1B9A667A00ECB267 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE94FE91B96005900874BEF /* Frameworks */ = {
+		7D0E42EF1B9A667D00ECB267 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,58 +56,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DE94FCE1B96005800874BEF = {
+		7D0E42D41B9A667900ECB267 = {
 			isa = PBXGroup;
 			children = (
-				7DE94FD91B96005800874BEF /* daVinci */,
-				7DE94FEF1B96005900874BEF /* daVinciTests */,
-				7DE94FD81B96005800874BEF /* Products */,
+				7D0E42DF1B9A667B00ECB267 /* daVinci */,
+				7D0E42F51B9A667D00ECB267 /* daVinciTests */,
+				7D0E42DE1B9A667B00ECB267 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7DE94FD81B96005800874BEF /* Products */ = {
+		7D0E42DE1B9A667B00ECB267 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DE94FD71B96005800874BEF /* daVinci.app */,
-				7DE94FEC1B96005900874BEF /* daVinciTests.xctest */,
+				7D0E42DD1B9A667B00ECB267 /* daVinci.app */,
+				7D0E42F21B9A667D00ECB267 /* daVinciTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7DE94FD91B96005800874BEF /* daVinci */ = {
+		7D0E42DF1B9A667B00ECB267 /* daVinci */ = {
 			isa = PBXGroup;
 			children = (
-				7DE94FDC1B96005800874BEF /* AppDelegate.swift */,
-				7DE94FDE1B96005800874BEF /* ViewController.swift */,
-				7DE94FE01B96005900874BEF /* Main.storyboard */,
-				7DE94FE31B96005900874BEF /* Images.xcassets */,
-				7DE94FE51B96005900874BEF /* LaunchScreen.xib */,
-				7DE94FDA1B96005800874BEF /* Supporting Files */,
+				7D0E42E21B9A667B00ECB267 /* AppDelegate.swift */,
+				7D0E42E41B9A667B00ECB267 /* ViewController.swift */,
+				7D0E42E61B9A667C00ECB267 /* Main.storyboard */,
+				7D0E42E91B9A667C00ECB267 /* Images.xcassets */,
+				7D0E42EB1B9A667C00ECB267 /* LaunchScreen.xib */,
+				7D0E42E01B9A667B00ECB267 /* Supporting Files */,
 			);
 			path = daVinci;
 			sourceTree = "<group>";
 		};
-		7DE94FDA1B96005800874BEF /* Supporting Files */ = {
+		7D0E42E01B9A667B00ECB267 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7DE94FDB1B96005800874BEF /* Info.plist */,
+				7D0E42E11B9A667B00ECB267 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7DE94FEF1B96005900874BEF /* daVinciTests */ = {
+		7D0E42F51B9A667D00ECB267 /* daVinciTests */ = {
 			isa = PBXGroup;
 			children = (
-				7DE94FF21B96005900874BEF /* daVinciTests.swift */,
-				7DE94FF01B96005900874BEF /* Supporting Files */,
+				7D0E42F81B9A667D00ECB267 /* daVinciTests.swift */,
+				7D0E42F61B9A667D00ECB267 /* Supporting Files */,
 			);
 			path = daVinciTests;
 			sourceTree = "<group>";
 		};
-		7DE94FF01B96005900874BEF /* Supporting Files */ = {
+		7D0E42F61B9A667D00ECB267 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7DE94FF11B96005900874BEF /* Info.plist */,
+				7D0E42F71B9A667D00ECB267 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -115,13 +115,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7DE94FD61B96005800874BEF /* daVinci */ = {
+		7D0E42DC1B9A667A00ECB267 /* daVinci */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DE94FF61B96005900874BEF /* Build configuration list for PBXNativeTarget "daVinci" */;
+			buildConfigurationList = 7D0E42FC1B9A667D00ECB267 /* Build configuration list for PBXNativeTarget "daVinci" */;
 			buildPhases = (
-				7DE94FD31B96005800874BEF /* Sources */,
-				7DE94FD41B96005800874BEF /* Frameworks */,
-				7DE94FD51B96005800874BEF /* Resources */,
+				7D0E42D91B9A667A00ECB267 /* Sources */,
+				7D0E42DA1B9A667A00ECB267 /* Frameworks */,
+				7D0E42DB1B9A667A00ECB267 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -129,46 +129,46 @@
 			);
 			name = daVinci;
 			productName = daVinci;
-			productReference = 7DE94FD71B96005800874BEF /* daVinci.app */;
+			productReference = 7D0E42DD1B9A667B00ECB267 /* daVinci.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7DE94FEB1B96005900874BEF /* daVinciTests */ = {
+		7D0E42F11B9A667D00ECB267 /* daVinciTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DE94FF91B96005900874BEF /* Build configuration list for PBXNativeTarget "daVinciTests" */;
+			buildConfigurationList = 7D0E42FF1B9A667D00ECB267 /* Build configuration list for PBXNativeTarget "daVinciTests" */;
 			buildPhases = (
-				7DE94FE81B96005900874BEF /* Sources */,
-				7DE94FE91B96005900874BEF /* Frameworks */,
-				7DE94FEA1B96005900874BEF /* Resources */,
+				7D0E42EE1B9A667D00ECB267 /* Sources */,
+				7D0E42EF1B9A667D00ECB267 /* Frameworks */,
+				7D0E42F01B9A667D00ECB267 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7DE94FEE1B96005900874BEF /* PBXTargetDependency */,
+				7D0E42F41B9A667D00ECB267 /* PBXTargetDependency */,
 			);
 			name = daVinciTests;
 			productName = daVinciTests;
-			productReference = 7DE94FEC1B96005900874BEF /* daVinciTests.xctest */;
+			productReference = 7D0E42F21B9A667D00ECB267 /* daVinciTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7DE94FCF1B96005800874BEF /* Project object */ = {
+		7D0E42D51B9A667900ECB267 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = jessalbarian;
 				TargetAttributes = {
-					7DE94FD61B96005800874BEF = {
+					7D0E42DC1B9A667A00ECB267 = {
 						CreatedOnToolsVersion = 6.4;
 					};
-					7DE94FEB1B96005900874BEF = {
+					7D0E42F11B9A667D00ECB267 = {
 						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 7DE94FD61B96005800874BEF;
+						TestTargetID = 7D0E42DC1B9A667A00ECB267;
 					};
 				};
 			};
-			buildConfigurationList = 7DE94FD21B96005800874BEF /* Build configuration list for PBXProject "daVinci" */;
+			buildConfigurationList = 7D0E42D81B9A667900ECB267 /* Build configuration list for PBXProject "daVinci" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,29 +176,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 7DE94FCE1B96005800874BEF;
-			productRefGroup = 7DE94FD81B96005800874BEF /* Products */;
+			mainGroup = 7D0E42D41B9A667900ECB267;
+			productRefGroup = 7D0E42DE1B9A667B00ECB267 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DE94FD61B96005800874BEF /* daVinci */,
-				7DE94FEB1B96005900874BEF /* daVinciTests */,
+				7D0E42DC1B9A667A00ECB267 /* daVinci */,
+				7D0E42F11B9A667D00ECB267 /* daVinciTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7DE94FD51B96005800874BEF /* Resources */ = {
+		7D0E42DB1B9A667A00ECB267 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE94FE21B96005900874BEF /* Main.storyboard in Resources */,
-				7DE94FE71B96005900874BEF /* LaunchScreen.xib in Resources */,
-				7DE94FE41B96005900874BEF /* Images.xcassets in Resources */,
+				7D0E42E81B9A667C00ECB267 /* Main.storyboard in Resources */,
+				7D0E42ED1B9A667C00ECB267 /* LaunchScreen.xib in Resources */,
+				7D0E42EA1B9A667C00ECB267 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE94FEA1B96005900874BEF /* Resources */ = {
+		7D0E42F01B9A667D00ECB267 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,46 +208,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7DE94FD31B96005800874BEF /* Sources */ = {
+		7D0E42D91B9A667A00ECB267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE94FDF1B96005800874BEF /* ViewController.swift in Sources */,
-				7DE94FDD1B96005800874BEF /* AppDelegate.swift in Sources */,
+				7D0E42E51B9A667B00ECB267 /* ViewController.swift in Sources */,
+				7D0E42E31B9A667B00ECB267 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DE94FE81B96005900874BEF /* Sources */ = {
+		7D0E42EE1B9A667D00ECB267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE94FF31B96005900874BEF /* daVinciTests.swift in Sources */,
+				7D0E42F91B9A667D00ECB267 /* daVinciTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7DE94FEE1B96005900874BEF /* PBXTargetDependency */ = {
+		7D0E42F41B9A667D00ECB267 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7DE94FD61B96005800874BEF /* daVinci */;
-			targetProxy = 7DE94FED1B96005900874BEF /* PBXContainerItemProxy */;
+			target = 7D0E42DC1B9A667A00ECB267 /* daVinci */;
+			targetProxy = 7D0E42F31B9A667D00ECB267 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7DE94FE01B96005900874BEF /* Main.storyboard */ = {
+		7D0E42E61B9A667C00ECB267 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7DE94FE11B96005900874BEF /* Base */,
+				7D0E42E71B9A667C00ECB267 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7DE94FE51B96005900874BEF /* LaunchScreen.xib */ = {
+		7D0E42EB1B9A667C00ECB267 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7DE94FE61B96005900874BEF /* Base */,
+				7D0E42EC1B9A667C00ECB267 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7DE94FF41B96005900874BEF /* Debug */ = {
+		7D0E42FA1B9A667D00ECB267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		7DE94FF51B96005900874BEF /* Release */ = {
+		7D0E42FB1B9A667D00ECB267 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,7 +336,7 @@
 			};
 			name = Release;
 		};
-		7DE94FF71B96005900874BEF /* Debug */ = {
+		7D0E42FD1B9A667D00ECB267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +346,7 @@
 			};
 			name = Debug;
 		};
-		7DE94FF81B96005900874BEF /* Release */ = {
+		7D0E42FE1B9A667D00ECB267 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -356,7 +356,7 @@
 			};
 			name = Release;
 		};
-		7DE94FFA1B96005900874BEF /* Debug */ = {
+		7D0E43001B9A667D00ECB267 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,7 +375,7 @@
 			};
 			name = Debug;
 		};
-		7DE94FFB1B96005900874BEF /* Release */ = {
+		7D0E43011B9A667D00ECB267 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -393,34 +393,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7DE94FD21B96005800874BEF /* Build configuration list for PBXProject "daVinci" */ = {
+		7D0E42D81B9A667900ECB267 /* Build configuration list for PBXProject "daVinci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DE94FF41B96005900874BEF /* Debug */,
-				7DE94FF51B96005900874BEF /* Release */,
+				7D0E42FA1B9A667D00ECB267 /* Debug */,
+				7D0E42FB1B9A667D00ECB267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DE94FF61B96005900874BEF /* Build configuration list for PBXNativeTarget "daVinci" */ = {
+		7D0E42FC1B9A667D00ECB267 /* Build configuration list for PBXNativeTarget "daVinci" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DE94FF71B96005900874BEF /* Debug */,
-				7DE94FF81B96005900874BEF /* Release */,
+				7D0E42FD1B9A667D00ECB267 /* Debug */,
+				7D0E42FE1B9A667D00ECB267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		7DE94FF91B96005900874BEF /* Build configuration list for PBXNativeTarget "daVinciTests" */ = {
+		7D0E42FF1B9A667D00ECB267 /* Build configuration list for PBXNativeTarget "daVinciTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7DE94FFA1B96005900874BEF /* Debug */,
-				7DE94FFB1B96005900874BEF /* Release */,
+				7D0E43001B9A667D00ECB267 /* Debug */,
+				7D0E43011B9A667D00ECB267 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7DE94FCF1B96005800874BEF /* Project object */;
+	rootObject = 7D0E42D51B9A667900ECB267 /* Project object */;
 }
