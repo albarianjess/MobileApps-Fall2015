@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var adventureText: UILabel!
     @IBOutlet weak var motivatedText: UILabel!
     
+    // Changes images and text based on button pressed
     @IBAction func switchImage(sender: UIButton){
         if sender.tag==1 {
             clearText()
