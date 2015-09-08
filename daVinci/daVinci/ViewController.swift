@@ -17,28 +17,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var lazyText: UILabel!
     @IBOutlet weak var adventureText: UILabel!
     @IBOutlet weak var motivatedText: UILabel!
+    var font: UIFont!
     
     // Changes images and text based on button pressed
     @IBAction func switchImage(sender: UIButton){
-        if sender.tag==1 {
+        changeFont()
+        if sender.tag == 1 {
             clearText()
-            mainImage.image=UIImage(named: "happy.png")
-            happyText.text="You're awesome!"
-        } else if sender.tag==2 {
+            mainImage.image = UIImage(named: "happy.png")
+            happyText.text = "You're awesome!"
+        } else if sender.tag == 2 {
             clearText()
-            mainImage.image=UIImage(named: "sad.png")
-            sadText.text="Don't be sad!"
-        } else if sender.tag==3 {
+            mainImage.image = UIImage(named: "sad.png")
+            sadText.text = "Don't be sad!"
+        } else if sender.tag == 3 {
             clearText()
-            mainImage.image=UIImage(named: "lazy.png")
-            lazyText.text="Stop procrastinating!"
-        } else if sender.tag==4 {
+            mainImage.image = UIImage(named: "lazy.png")
+            lazyText.text = "Stop procrastinating!"
+        } else if sender.tag == 4 {
             clearText()
-            mainImage.image=UIImage(named: "adventure.png")
-            adventureText.text="Go kitty go!"
-        } else if sender.tag==5 {
+            mainImage.image = UIImage(named: "adventure.png")
+            adventureText.text = "Go kitty go!"
+        } else if sender.tag == 5 {
             clearText()
-            mainImage.image=UIImage(named: "motivated.png")
+            mainImage.image = UIImage(named: "motivated.png")
             motivatedText.text="Dive into those books!"
         }
     }
@@ -50,6 +52,14 @@ class ViewController: UIViewController {
         lazyText.text = ""
         adventureText.text = ""
         motivatedText.text = ""
+    }
+    
+    func changeFont(){
+        happyText.font = UIFont(name: "Arial", size: 20)
+        sadText.font = UIFont(name: "Arial", size: 20)
+        lazyText.font = UIFont(name: "Arial", size: 20)
+        adventureText.font = UIFont(name: "Arial", size: 20)
+        motivatedText.font = UIFont(name: "Arial", size: 20)
     }
     
     override func viewDidLoad() {
