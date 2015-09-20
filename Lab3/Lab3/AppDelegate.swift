@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Hello World
+//  Lab3
 //
 //  Created by Jessie Albarian on 9/17/15.
 //  Copyright (c) 2015 jalbarian. All rights reserved.

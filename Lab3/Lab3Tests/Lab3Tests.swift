@@ -1,6 +1,6 @@
 //
-//  Hello_WorldTests.swift
-//  Hello WorldTests
+//  Lab3Tests.swift
+//  Lab3Tests
 //
 //  Created by Jessie Albarian on 9/17/15.
 //  Copyright (c) 2015 jalbarian. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class Hello_WorldTests: XCTestCase {
+class Lab3Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

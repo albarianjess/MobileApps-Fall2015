@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,25 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKK-qh-msb">
-                                <rect key="frame" x="114" y="210" width="93" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBN-rH-U8z">
+                                <rect key="frame" x="116" y="110" width="89" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="rTU-PP-cSc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-7V-Lk0">
+                                <rect key="frame" x="40" y="216" width="240" height="194"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.95565349261372012" blue="0.89375894523703026" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DKK-qh-msb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="190" id="5ng-IO-ecT"/>
-                            <constraint firstItem="DKK-qh-msb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Fe5-Pn-4pP"/>
+                            <constraint firstItem="NBN-rH-U8z" firstAttribute="centerX" secondItem="dnl-7V-Lk0" secondAttribute="centerX" id="36U-eH-T0l"/>
+                            <constraint firstItem="dnl-7V-Lk0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="IMu-XK-flc"/>
+                            <constraint firstItem="dnl-7V-Lk0" firstAttribute="top" secondItem="NBN-rH-U8z" secondAttribute="bottom" constant="85" id="R1i-yp-zcN"/>
+                            <constraint firstItem="NBN-rH-U8z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="90" id="nkh-Hu-a3A"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dnl-7V-Lk0" secondAttribute="bottom" constant="158" id="wwv-IJ-rxl"/>
+                            <constraint firstItem="NBN-rH-U8z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y5x-sj-iCq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldText" destination="NBN-rH-U8z" id="UGV-Gy-fVE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="202.66666666666666" y="300.09333333333331"/>
+            <point key="canvasLocation" x="202" y="300"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="poppy" width="960" height="720"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

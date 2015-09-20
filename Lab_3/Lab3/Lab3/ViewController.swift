@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Hello World
+//  Lab3
 //
-//  Created by Jessie Albarian on 9/17/15.
+//  Created by Jessie Albarian on 9/20/15.
 //  Copyright (c) 2015 jalbarian. All rights reserved.
 //
 
@@ -10,23 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
-    
-    @IBOutlet weak var helloWorldText: UILabel!
-    @IBOutlet weak var iamabutton: UIButton!
-    
-    func changeText(){
-        //if button is pressed
-        
-        helloWorldText.text = "
-    }
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
