@@ -253,8 +253,6 @@
                                 <exclude reference="but-Kr-Vds"/>
                                 <exclude reference="gNU-HP-ku2"/>
                                 <exclude reference="m43-hd-GhP"/>
-                                <exclude reference="YpM-QT-K0E"/>
-                                <exclude reference="idJ-1J-HaJ"/>
                                 <exclude reference="2Kw-TE-5cJ"/>
                                 <exclude reference="QRT-dB-UEJ"/>
                                 <exclude reference="Vod-Nl-LYV"/>
@@ -271,6 +269,8 @@
                                 <exclude reference="AQ6-2y-518"/>
                                 <exclude reference="EK4-cz-vtA"/>
                                 <exclude reference="jVL-SO-jQd"/>
+                                <exclude reference="YpM-QT-K0E"/>
+                                <exclude reference="idJ-1J-HaJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -288,10 +288,6 @@
                                 <include reference="m43-hd-GhP"/>
                                 <exclude reference="tfI-GJ-3Kc"/>
                                 <exclude reference="uBk-Gp-Otc"/>
-                                <exclude reference="3Ss-hj-uUA"/>
-                                <include reference="YpM-QT-K0E"/>
-                                <include reference="idJ-1J-HaJ"/>
-                                <exclude reference="pIN-tL-6ix"/>
                                 <include reference="2Kw-TE-5cJ"/>
                                 <exclude reference="P97-Xz-b5i"/>
                                 <include reference="QRT-dB-UEJ"/>
@@ -317,6 +313,10 @@
                                 <include reference="EK4-cz-vtA"/>
                                 <exclude reference="Ly1-Zt-uMi"/>
                                 <include reference="jVL-SO-jQd"/>
+                                <exclude reference="3Ss-hj-uUA"/>
+                                <include reference="YpM-QT-K0E"/>
+                                <include reference="idJ-1J-HaJ"/>
+                                <exclude reference="pIN-tL-6ix"/>
                             </mask>
                         </variation>
                     </view>
