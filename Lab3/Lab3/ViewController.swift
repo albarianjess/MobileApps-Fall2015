@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Lab3
 //
-//  Created by Jessie Albarian on 9/20/15.
+//  Created by Jessie Albarian on 9/24/15.
 //  Copyright (c) 2015 jalbarian. All rights reserved.
 //
 
