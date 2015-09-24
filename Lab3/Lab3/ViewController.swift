@@ -10,8 +10,16 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    
+    
+    //---------------
+    // Main Variables
+    //---------------
     @IBOutlet weak var celciusText: UITextField!
     @IBOutlet weak var fText: UILabel!
+    
+    @IBOutlet weak var fahText: UITextField!
+    @IBOutlet weak var cText: UILabel!
     
     
     
@@ -26,19 +34,37 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     //----------------------------
-    // Does temperature conversion
+    // Temperature conversion
     //----------------------------
     func calculation(){
         
         //if celsius text field is chosen, do this
         //if fahren text field is chosen, do this
-        
-        let celc = (celciusText.text as NSString).floatValue
-        let fahren = celc * (9/5) + 32
-    
         var numFormatter = NSNumberFormatter()
         numFormatter.numberStyle=NSNumberFormatterStyle.NoStyle
-        fText.text = numFormatter.stringFromNumber(fahren)
+        
+        
+        if (fahText.text.isEmpty) {
+            let celc = (celciusText.text as NSString).floatValue
+            let fahren = celc * (9/5) + 32
+            fText.text = numFormatter.stringFromNumber(fahren)
+            clearText()
+        } else if (celciusText.text.isEmpty){
+            let far = (fahText.text as NSString).floatValue
+            let celsi = (far - 32) * (5/9)
+            cText.text = numFormatter.stringFromNumber(celsi)
+            clearText()
+        }
+    }
+    
+    
+    
+    //---------------------------------
+    // Clear text after each conversion
+    //---------------------------------
+    func clearText(){
+        celciusText.text = ""
+        fahText.text = ""
     }
     
     
@@ -53,7 +79,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        celciusText.delegate=self
+        celciusText.delegate = self
+        fahText.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
