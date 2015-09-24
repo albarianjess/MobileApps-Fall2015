@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lab3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +18,79 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature Converter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-tg-a7a">
+                                <rect key="frame" x="181" y="73" width="239" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="8pM-Nm-ad2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Degrees in Celsius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIt-yM-VyD">
+                                <rect key="frame" x="91" y="141" width="188" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EWV-Vx-YSf">
+                                <rect key="frame" x="369" y="137" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="dP9-ga-8s7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees in Fahrenheit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndD-WH-Ooy">
+                                <rect key="frame" x="91" y="190" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbH-rr-4ka">
+                                <rect key="frame" x="424" y="190" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="vqs-kI-tx8">
+                                        <variation key="widthClass=compact" constant="73"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ndD-WH-Ooy" secondAttribute="bottom" constant="389" id="3L6-oa-q4x">
+                                <variation key="heightClass=compact" constant="182"/>
+                            </constraint>
+                            <constraint firstItem="1RA-tg-a7a" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4aW-gx-oge"/>
+                            <constraint firstItem="ndD-WH-Ooy" firstAttribute="baseline" secondItem="tbH-rr-4ka" secondAttribute="firstBaseline" id="AP5-9W-ICn"/>
+                            <constraint firstItem="tbH-rr-4ka" firstAttribute="baseline" secondItem="ndD-WH-Ooy" secondAttribute="firstBaseline" id="AbV-az-7sF"/>
+                            <constraint firstItem="OIt-yM-VyD" firstAttribute="baseline" secondItem="EWV-Vx-YSf" secondAttribute="baseline" id="K2M-5z-76a"/>
+                            <constraint firstItem="1RA-tg-a7a" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="53" id="Ndp-jM-jE7"/>
+                            <constraint firstAttribute="centerX" secondItem="1RA-tg-a7a" secondAttribute="centerX" id="TV2-nA-Mdr"/>
+                            <constraint firstItem="ndD-WH-Ooy" firstAttribute="top" secondItem="OIt-yM-VyD" secondAttribute="bottom" constant="28" id="VyG-Xr-ySb"/>
+                            <constraint firstItem="OIt-yM-VyD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="75" id="Wce-0i-nvG">
+                                <variation key="widthClass=compact" constant="18"/>
+                            </constraint>
+                            <constraint firstItem="EWV-Vx-YSf" firstAttribute="leading" secondItem="OIt-yM-VyD" secondAttribute="trailing" constant="90" id="bvi-Em-zE8">
+                                <variation key="widthClass=compact" constant="8"/>
+                            </constraint>
+                            <constraint firstItem="OIt-yM-VyD" firstAttribute="leading" secondItem="ndD-WH-Ooy" secondAttribute="leading" id="ijT-eZ-deA"/>
+                            <constraint firstItem="EWV-Vx-YSf" firstAttribute="top" secondItem="1RA-tg-a7a" secondAttribute="bottom" constant="43" id="tUE-5g-pvr"/>
+                            <constraint firstItem="EWV-Vx-YSf" firstAttribute="trailing" secondItem="tbH-rr-4ka" secondAttribute="trailing" id="zvZ-cH-s9m"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celciusText" destination="EWV-Vx-YSf" id="LjK-kT-oP9"/>
+                        <outlet property="fText" destination="tbH-rr-4ka" id="Duv-Xg-zOF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="189" y="335"/>
         </scene>
     </scenes>
 </document>

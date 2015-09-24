@@ -8,11 +8,52 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var celciusText: UITextField!
+    @IBOutlet weak var fText: UILabel!
+    
+    
+    
+    //--------------------
+    // Dismisses keyboard
+    //--------------------
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    
+    //----------------------------
+    // Does temperature conversion
+    //----------------------------
+    func calculation(){
+        
+        //if celsius text field is chosen, do this
+        //if fahren text field is chosen, do this
+        
+        let celc = (celciusText.text as NSString).floatValue
+        let fahren = celc * (9/5) + 32
+    
+        var numFormatter = NSNumberFormatter()
+        numFormatter.numberStyle=NSNumberFormatterStyle.NoStyle
+        fText.text = numFormatter.stringFromNumber(fahren)
+    }
+    
+    
+    
+    //------------------------------------------
+    // Calls function after textfield is entered
+    //------------------------------------------
+    func textFieldDidEndEditing(textField: UITextField) {
+        calculation()
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        celciusText.delegate=self
     }
 
     override func didReceiveMemoryWarning() {
