@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,17 +25,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poppy" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-7V-Lk0">
-                                <rect key="frame" x="40" y="216" width="240" height="194"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95565349261372012" blue="0.89375894523703026" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="NBN-rH-U8z" firstAttribute="centerX" secondItem="dnl-7V-Lk0" secondAttribute="centerX" id="36U-eH-T0l"/>
-                            <constraint firstItem="dnl-7V-Lk0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="IMu-XK-flc"/>
-                            <constraint firstItem="dnl-7V-Lk0" firstAttribute="top" secondItem="NBN-rH-U8z" secondAttribute="bottom" constant="85" id="R1i-yp-zcN"/>
                             <constraint firstItem="NBN-rH-U8z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="90" id="nkh-Hu-a3A"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dnl-7V-Lk0" secondAttribute="bottom" constant="158" id="wwv-IJ-rxl"/>
                             <constraint firstItem="NBN-rH-U8z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y5x-sj-iCq"/>
                         </constraints>
                     </view>
@@ -49,9 +41,6 @@
             <point key="canvasLocation" x="202" y="300"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="poppy" width="960" height="720"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

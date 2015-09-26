@@ -15,11 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var helloWorldText: UILabel!
     @IBOutlet weak var iamabutton: UIButton!
     
-    func changeText(){
-        //if button is pressed
-        
-        helloWorldText.text = "
-    }
+
     
     
     
