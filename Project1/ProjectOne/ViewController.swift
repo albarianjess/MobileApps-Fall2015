@@ -16,9 +16,11 @@ class ArticlePage: UIViewController, UITextViewDelegate {
     //----------
     // Variables
     //----------
-    @IBOutlet weak var topStoryText: UITextView!
     @IBOutlet weak var topStoryTitle: UILabel!
     @IBOutlet weak var articleNav: UINavigationBar!
+    
+    @IBOutlet weak var topStoryText: UILabel!
+    
     
     func updateTitle(){
         topStoryTitle.text = "COIN TOSS: Will CU Soccer or Volleyball Have a Better Season?"
@@ -30,7 +32,7 @@ class ArticlePage: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainText()
+        //mainText()
         updateTitle()
     }
     
@@ -65,6 +67,10 @@ class ViewController: UIViewController, UITextViewDelegate{
     @IBOutlet weak var articleOneDate: UILabel!     //article 1 date
     @IBOutlet weak var articleTwoDate: UILabel!     //article 2 date
     
+    @IBOutlet weak var articleOneDes: UILabel!
+    @IBOutlet weak var articleTwoDes: UILabel!
+    
+    
     //---------------------
     // Make images circular
     //---------------------
@@ -72,32 +78,37 @@ class ViewController: UIViewController, UITextViewDelegate{
         articleOne.layer.cornerRadius = articleOne.frame.size.height/2;
         articleOne.layer.masksToBounds = true;
         articleOne.layer.borderWidth = 0;
-        
         articleTwo.layer.cornerRadius = articleTwo.frame.size.height/2;
         articleTwo.layer.masksToBounds = true;
         articleTwo.layer.borderWidth = 0;
     }
     
     
-    //
+    //-------------
     // Update dates
-    //
+    //-------------
     func updateDates(){
         articleOneDate.text = "09/26/15"
         articleTwoDate.text = "09/04/15"
     }
+    
     
     //---------------------------
     // Update titles for articles
     //---------------------------
     func updateTitles(){
         topStoryLabel.text = "COIN TOSS: Will CU Soccer or Volleyball Have a Better Season?"
-        articleOneLabel.text = ""
+        articleOneLabel.text = "COLORADO FOOTBALL GROWS UP IN WIN OVER RAMS"
         articleTwoLabel.text = "MUSIC PREVIEW: FOX AND BOULDER THEATER"
     }
     
+    
+    //--------------------
+    // Update descriptions
+    //--------------------
     func updateDescription(){
-        
+        articleOneDes.text = "Defensive stand in overtime shows Buffs can find a way to win."
+        articleTwoDes.text = "Funk and jazz make a big showing in Boulder this week at the Fox and Boulder Theater."
     }
     
     
@@ -108,6 +119,8 @@ class ViewController: UIViewController, UITextViewDelegate{
         super.viewDidLoad()
         updateTitles()
         circleImages()
+        //updateDescription()
+        updateDates()
     }
     
     
@@ -118,13 +131,6 @@ class ViewController: UIViewController, UITextViewDelegate{
         
     }
     
-    
-    //
-    //
-    //
-    func textViewDidChange(textView: UITextView) { //Handle the text changes here
-        print(topStoryLabel.text);
-    }
     
     //------------------------------
     // Resets view to original state
