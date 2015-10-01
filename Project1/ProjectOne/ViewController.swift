@@ -18,8 +18,8 @@ class ArticlePage: UIViewController, UITextViewDelegate {
     //----------
     @IBOutlet weak var topStoryTitle: UILabel!
     @IBOutlet weak var articleNav: UINavigationBar!
+    @IBOutlet weak var topStoryText: UITextView!
     
-    @IBOutlet weak var topStoryText: UILabel!
     
     
     func updateTitle(){
@@ -32,12 +32,8 @@ class ArticlePage: UIViewController, UITextViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //mainText()
+        mainText()
         updateTitle()
-    }
-    
-    func textViewDidChange(textView: UITextView) { //Handle the text changes here
-        print(topStoryTitle.text);
     }
     
     override func didReceiveMemoryWarning() {
