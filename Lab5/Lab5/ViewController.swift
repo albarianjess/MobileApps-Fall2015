@@ -19,7 +19,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //----------
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
-    var annotation = MKPointAnnotation()
+    var annotation      = MKPointAnnotation()
+    var coffee1         = MKPointAnnotation()
+    var coffee2         = MKPointAnnotation()
+    var coffee3         = MKPointAnnotation()
 
     
     
@@ -47,13 +50,50 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     // Called when a new location value is available
     //----------------------------------------------
     func locationManager (manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+        let locationCU = CLLocationCoordinate2D(
+            latitude: 40.007581,
+            longitude: -105.265942
+        )
+        
+        let laughingGoat = CLLocationCoordinate2D(
+            latitude: 40.019604,
+            longitude: -105.273141
+        )
+        
+        let ozo = CLLocationCoordinate2D(
+            latitude: 40.017726,
+            longitude: -105.282214
+        )
+        
+        let tods = CLLocationCoordinate2D(
+            latitude: 40.072171,
+            longitude: 105.200873)
+        
+        
+        
         let span = MKCoordinateSpanMake(0.05, 0.05)
         let region = MKCoordinateRegionMake(manager.location.coordinate, span)
         mapView.setRegion(region, animated:true)
-        annotation.coordinate   = manager.location.coordinate
-        annotation.title        = "You are here"
-        annotation.subtitle     = "Lat: \(manager.location.coordinate.latitude) Long: \(manager.location.coordinate.latitude)"
+        
+        annotation.coordinate   = locationCU
+        annotation.title        = "CU Boulder"
+        annotation.subtitle     = "Lat: \(manager.location.coordinate.latitude) Long: \(manager.location.coordinate.longitude)"
         mapView.addAnnotation(annotation)
+        
+        // Added my favorite coffee shop locations
+        coffee1.coordinate = laughingGoat
+        coffee1.title      = "Laughing Goat"
+        mapView.addAnnotation(coffee1)
+        
+        coffee2.coordinate = ozo
+        coffee2.title      = "Ozo"
+        mapView.addAnnotation(coffee2)
+        
+        coffee3.coordinate  = tods
+        coffee3.title       = "Tods Espresso"
+        mapView.addAnnotation(coffee3)
+        
+        
     }
     
     
