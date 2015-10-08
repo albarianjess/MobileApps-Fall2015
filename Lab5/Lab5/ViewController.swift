@@ -67,7 +67,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         let tods = CLLocationCoordinate2D(
             latitude: 40.072171,
-            longitude: 105.200873)
+            longitude: -105.200873)
         
         
         
