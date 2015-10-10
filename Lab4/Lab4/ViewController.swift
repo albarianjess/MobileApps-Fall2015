@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     //-----------
     @IBOutlet weak var slider:      UISlider!
     @IBOutlet weak var sliderLabel: UILabel!
-    @IBOutlet weak var mainImage:   UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     var delta           = CGPointMake(12, 4)            //12px horizontal, 4px vertical
     var imageRadius     = CGFloat()                     //radius of image
@@ -34,7 +34,23 @@ class ViewController: UIViewController {
         changeSliderValue()
     }
     
+    
     func makeSnow() {
+        var arrayImages: [UIImage] = []
+        var i : Int;
+        for i = 0; i <= 10; i++ {
+            /*let name = "snow.png"
+            let image = UIImage(named: name)
+            let imageView = UIImageView(image: image!)
+            imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)*/
+            arrayImages.append(UIImage(named: "snow.png")!)
+            view.addSubview(imageView)
+        }
+    }
+    
+    
+    
+    /*func makeSnow() {
         
         for i in 0...100 {
             let snow = UIView()
@@ -71,7 +87,7 @@ class ViewController: UIViewController {
             // `290` was chosen simply by experimentation
             anim.timeOffset = Double(arc4random_uniform(290))
         }
-    }
+    }*/
     
     //----------------------
     // Function to make snow
@@ -93,37 +109,23 @@ class ViewController: UIViewController {
     // Changes position of image
     //--------------------------
     func moveImage() {
-        
-        let duration = Double(slider.value)
-        
-        let snow = UIView()
-        snow.frame = CGRect(x: 55, y: 300, width: 20, height: 20)   //set frame for image
-        snow.layer.cornerRadius = snow.frame.size.height/2;         //make image circular
-        snow.backgroundColor = UIColor.whiteColor()                 //white!
-        self.view.addSubview(snow)                                  //add to view
-        
-        
-        UIView.beginAnimations("snow", context: nil)
-        UIView.animateWithDuration(duration, animations:
-            {snow.transform=CGAffineTransformMakeTranslation(self.translation.x
-                , self.translation.y)
-                self.translation.x += self.delta.x
-                self.translation.y += self.delta.y
-                //sets transform to CGAffineTransform)
-            })
-        UIView.commitAnimations()
-    
-        snow.center=CGPointMake(snow.center.x + delta.x, snow.center.y + delta.y)
-        
-        if snow.center.x + translation.x > self.view.bounds.size.width-imageRadius
-            || snow.center.x + translation.x < imageRadius{
+       
+        if imageView.center.x > view.bounds.size.width-imageRadius ||
+            imageView.center.x < imageRadius{
                 delta.x = -delta.x
         }
-        //Taking this out allows the images to disappear at the bottom of the screen
-        /*if mainImage.center.y + translation.y > self.view.bounds.size.height
-            - ballRadius || mainImage.center.y + translation.y < ballRadius {
+        if imageView.center.y > view.bounds.size.height - imageRadius ||
+            imageView.center.y < imageRadius {
                 delta.y = -delta.y
-        }*/
+        }
+    
+        let duration=Double(slider.value)
+        UIView.beginAnimations("snow", context: nil)
+        UIView.animateWithDuration(duration, animations:
+            {self.imageView.center=CGPointMake(self.imageView.center.x + self.delta.x,
+                self.imageView.center.y + self.delta.y)})
+        UIView.commitAnimations()
+    
     }
     
     
@@ -147,9 +149,9 @@ class ViewController: UIViewController {
     // Do setup before app is started
     //-------------------------------
     override func viewDidLoad() {
-        imageRadius = mainImage.frame.size.width/2    //set image radius
+        imageRadius = imageView.frame.size.width/2    //set image radius
         changeSliderValue()
-        //makeSnow()
+        makeSnow()
         super.viewDidLoad()
     }
     override func didReceiveMemoryWarning() {
