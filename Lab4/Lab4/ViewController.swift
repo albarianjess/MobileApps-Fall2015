@@ -67,9 +67,18 @@ class ViewController: UIViewController {
         let duration=Double(slider.value)
         UIView.beginAnimations("snow", context: nil)
         UIView.animateWithDuration(duration, animations:
-            {self.imageView.center=CGPointMake(self.imageView.center.x + self.delta.x,
-                self.imageView.center.y + self.delta.y)})
+            {self.imageView.transform=CGAffineTransformMakeRotation(self.angle)
+                self.imageView.center=CGPointMake(self.imageView.center.x +
+                    self.delta.x, self.imageView.center.y + self.delta.y)})
+        angle += 0.02
+        if angle > CGFloat(2*M_PI) {
+            angle=0
+        }
         UIView.commitAnimations()
+        
+        
+        
+
     }
     
     func moveImage2() {
@@ -80,8 +89,13 @@ class ViewController: UIViewController {
         let duration=Double(slider.value)
         UIView.beginAnimations("snow", context: nil)
         UIView.animateWithDuration(duration, animations:
-            {self.snow1.center=CGPointMake(self.snow1.center.x + self.delta.x,
-                self.snow1.center.y + self.delta.y)})
+            {self.snow1.transform=CGAffineTransformMakeRotation(self.angle)
+                self.snow1.center=CGPointMake(self.snow1.center.x +
+                    self.delta.x, self.snow1.center.y + self.delta.y)})
+        angle += 0.02
+        if angle > CGFloat(2*M_PI) {
+            angle=0
+        }
         UIView.commitAnimations()
     }
     

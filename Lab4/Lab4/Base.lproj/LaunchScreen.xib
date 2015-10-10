@@ -17,28 +17,16 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="bk0-R1-lpF">
-                    <rect key="frame" x="133" y="191" width="240" height="240"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="240" id="MCc-Vg-Tep"/>
-                        <constraint firstAttribute="height" constant="240" id="vmg-TW-cNG"/>
-                    </constraints>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.41960784313725491" green="0.46666666666666667" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="1ix-aM-9AJ"/>
-                <constraint firstItem="bk0-R1-lpF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="133" id="7v6-3b-z7G"/>
-                <constraint firstItem="bk0-R1-lpF" firstAttribute="top" secondItem="kId-c2-rCX" secondAttribute="bottom" constant="8" symbolic="YES" id="Gac-i4-Tjn"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="140" id="NUr-aN-Opd"/>
                 <constraint firstItem="kId-c2-rCX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qde-dJ-lgL"/>
-                <constraint firstAttribute="bottom" secondItem="bk0-R1-lpF" secondAttribute="bottom" constant="49" id="qrT-v8-7v7"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="625" y="458"/>
         </view>
     </objects>
-    <resources>
-        <image name="cloud" width="800" height="357"/>
-    </resources>
 </document>
