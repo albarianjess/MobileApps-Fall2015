@@ -34,7 +34,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow" id="L6k-Gz-4KR">
-                                <rect key="frame" x="16" y="20" width="100" height="100"/>
+                                <rect key="frame" x="16" y="169" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow" id="O0g-H3-qeX">
+                                <rect key="frame" x="626" y="89" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -44,6 +48,7 @@
                         <outlet property="imageView" destination="L6k-Gz-4KR" id="iQW-Qw-hrW"/>
                         <outlet property="slider" destination="KRt-ls-zof" id="AKd-af-Vp6"/>
                         <outlet property="sliderLabel" destination="iVV-fG-hR8" id="Ra0-Qf-hax"/>
+                        <outlet property="snow1" destination="O0g-H3-qeX" id="WBD-9g-rKB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
