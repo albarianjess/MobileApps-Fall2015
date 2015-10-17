@@ -13,6 +13,7 @@
 		7D4003731BD1E8CB00C97B8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4003721BD1E8CB00C97B8D /* Images.xcassets */; };
 		7D4003761BD1E8CB00C97B8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D4003741BD1E8CB00C97B8D /* LaunchScreen.xib */; };
 		7D4003821BD1E8CC00C97B8D /* Lab6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4003811BD1E8CC00C97B8D /* Lab6Tests.swift */; };
+		7D71A1D81BD211F200B70E0F /* 01 Waves (ft. T.I. & Chris Brown).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D71A1D71BD211F200B70E0F /* 01 Waves (ft. T.I. & Chris Brown).mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7D40037B1BD1E8CB00C97B8D /* Lab6Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab6Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D4003801BD1E8CB00C97B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4003811BD1E8CC00C97B8D /* Lab6Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab6Tests.swift; sourceTree = "<group>"; };
+		7D71A1D71BD211F200B70E0F /* 01 Waves (ft. T.I. & Chris Brown).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "01 Waves (ft. T.I. & Chris Brown).mp3"; path = "../../../../Music/01 Waves (ft. T.I. & Chris Brown).mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		7D4003681BD1E8CB00C97B8D /* Lab6 */ = {
 			isa = PBXGroup;
 			children = (
+				7D71A1D71BD211F200B70E0F /* 01 Waves (ft. T.I. & Chris Brown).mp3 */,
 				7D40036B1BD1E8CB00C97B8D /* AppDelegate.swift */,
 				7D40036D1BD1E8CB00C97B8D /* ViewController.swift */,
 				7D40036F1BD1E8CB00C97B8D /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				7D4003711BD1E8CB00C97B8D /* Main.storyboard in Resources */,
 				7D4003761BD1E8CB00C97B8D /* LaunchScreen.xib in Resources */,
 				7D4003731BD1E8CB00C97B8D /* Images.xcassets in Resources */,
+				7D71A1D81BD211F200B70E0F /* 01 Waves (ft. T.I. & Chris Brown).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				7D4003871BD1E8CC00C97B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D4003881BD1E8CC00C97B8D /* Build configuration list for PBXNativeTarget "Lab6Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				7D40038A1BD1E8CC00C97B8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

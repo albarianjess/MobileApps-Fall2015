@@ -23,9 +23,9 @@
                                     <constraint firstAttribute="width" constant="307" id="wjW-S0-wUy"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hQB-hy-UOK" appends="YES" id="UO4-Tt-zAp"/>
-                                    <outletCollection property="gestureRecognizers" destination="ObN-Yk-GJr" appends="YES" id="Scx-cf-Ukj"/>
-                                    <outletCollection property="gestureRecognizers" destination="qq4-gE-KJB" appends="YES" id="IJs-jf-0gR"/>
+                                    <outletCollection property="gestureRecognizers" destination="ICU-E2-oG5" appends="YES" id="mPo-BS-OoK"/>
+                                    <outletCollection property="gestureRecognizers" destination="m33-Lu-SIf" appends="YES" id="yzL-zc-0Fz"/>
+                                    <outletCollection property="gestureRecognizers" destination="U4H-AC-ybU" appends="YES" id="t0c-Lf-fCn"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -36,27 +36,21 @@
                             <constraint firstItem="5yt-42-Q8O" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="zgt-00-RRB"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="view" destination="5yt-42-Q8O" id="LPd-gf-bCD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="hQB-hy-UOK">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ICU-E2-oG5">
                     <connections>
-                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="y4w-YV-YBZ"/>
-                        <outlet property="delegate" destination="kh9-bI-dsS" id="A6F-zd-bMM"/>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="jTq-LM-tlE"/>
                     </connections>
                 </panGestureRecognizer>
-                <pinchGestureRecognizer id="ObN-Yk-GJr">
+                <pinchGestureRecognizer id="m33-Lu-SIf">
                     <connections>
-                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="EPd-Cu-CsN"/>
-                        <outlet property="delegate" destination="kh9-bI-dsS" id="Ed7-Jl-o2h"/>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="SSJ-0b-UYH"/>
                     </connections>
                 </pinchGestureRecognizer>
-                <rotationGestureRecognizer id="qq4-gE-KJB">
+                <rotationGestureRecognizer id="U4H-AC-ybU">
                     <connections>
-                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="0Ud-53-ebS"/>
-                        <outlet property="delegate" destination="kh9-bI-dsS" id="Q29-fn-gKv"/>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="rL8-R7-qt5"/>
                     </connections>
                 </rotationGestureRecognizer>
             </objects>
