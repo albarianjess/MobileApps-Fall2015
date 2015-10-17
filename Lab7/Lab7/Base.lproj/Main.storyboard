@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pjw-Na-g7t"/>
+                        <viewControllerLayoutGuide type="bottom" id="NR9-Ub-tJn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXC-Ze-cPh">
+                                <rect key="frame" x="275" y="63" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LA7-E3-CMj"/>
+                                </constraints>
+                                <state key="normal" title="Record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEk-kL-FlL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeG-GQ-Kof">
+                                <rect key="frame" x="285" y="114" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bGC-4r-wCj"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4X9-CZ-dUe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music" translatesAutoresizingMaskIntoConstraints="NO" id="uu5-yu-bMG">
+                                <rect key="frame" x="170" y="226" width="260" height="268"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="mUy-iv-wLh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vot-tl-z4b">
+                                <rect key="frame" x="283" y="161" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="2n6-lw-OWa"/>
+                                    <constraint firstAttribute="height" constant="30" id="YWD-I7-Tlj"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="klU-4I-Yr8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80157904580114514" green="0.59779815773052758" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uu5-yu-bMG" firstAttribute="top" secondItem="Vot-tl-z4b" secondAttribute="bottom" constant="35" id="85p-mF-jWT">
+                                <variation key="heightClass=compact" constant="107"/>
+                            </constraint>
+                            <constraint firstItem="Vot-tl-z4b" firstAttribute="top" secondItem="JeG-GQ-Kof" secondAttribute="bottom" constant="17" id="GWv-d4-jfC">
+                                <variation key="heightClass=compact" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="NR9-Ub-tJn" firstAttribute="top" secondItem="uu5-yu-bMG" secondAttribute="bottom" constant="106" id="Gg8-3O-aii">
+                                <variation key="heightClass=compact" constant="45"/>
+                            </constraint>
+                            <constraint firstItem="Vot-tl-z4b" firstAttribute="centerX" secondItem="JeG-GQ-Kof" secondAttribute="centerX" id="LMN-Rf-hKQ">
+                                <variation key="heightClass=compact" constant="102"/>
+                            </constraint>
+                            <constraint firstItem="JeG-GQ-Kof" firstAttribute="centerX" secondItem="wXC-Ze-cPh" secondAttribute="centerX" id="lI9-Nu-tyB">
+                                <variation key="heightClass=compact" constant="105"/>
+                            </constraint>
+                            <constraint firstItem="JeG-GQ-Kof" firstAttribute="top" secondItem="wXC-Ze-cPh" secondAttribute="bottom" constant="21" id="nj0-nE-gmv">
+                                <variation key="heightClass=compact" constant="-30"/>
+                            </constraint>
+                            <constraint firstItem="uu5-yu-bMG" firstAttribute="centerX" secondItem="Vot-tl-z4b" secondAttribute="centerX" id="rFq-Gx-kDq">
+                                <variation key="heightClass=compact" constant="-102"/>
+                            </constraint>
+                            <constraint firstItem="wXC-Ze-cPh" firstAttribute="top" secondItem="Pjw-Na-g7t" secondAttribute="bottom" constant="43" id="wrJ-SM-6RA">
+                                <variation key="heightClass=compact" constant="49"/>
+                            </constraint>
+                            <constraint firstItem="wXC-Ze-cPh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xJh-Gx-iVF">
+                                <variation key="heightClass=compact" constant="-105"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButt" destination="JeG-GQ-Kof" id="zgo-81-QIH"/>
+                        <outlet property="recordButt" destination="wXC-Ze-cPh" id="rtk-zx-Jbf"/>
+                        <outlet property="stopButt" destination="Vot-tl-z4b" id="IdW-X4-gpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256" y="301.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music" width="380" height="400"/>
+    </resources>
+</document>
