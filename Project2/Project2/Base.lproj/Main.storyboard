@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="vXZ-lx-hvc" customClass="MainViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nR-ez-y8D">
+                                <rect key="frame" x="0.0" y="174" width="600" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for something at CU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysl-nT-NKL">
+                                <rect key="frame" x="193" y="104" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5nR-ez-y8D" secondAttribute="trailing" id="VVd-TI-ZLQ"/>
+                            <constraint firstItem="5nR-ez-y8D" firstAttribute="top" secondItem="Ysl-nT-NKL" secondAttribute="bottom" constant="49" id="Vmr-J4-Rct"/>
+                            <constraint firstItem="5nR-ez-y8D" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Xee-oR-p4R"/>
+                            <constraint firstItem="Ysl-nT-NKL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="84" id="bKZ-mD-hYx"/>
+                            <constraint firstItem="Ysl-nT-NKL" firstAttribute="centerX" secondItem="5nR-ez-y8D" secondAttribute="centerX" id="cwB-gV-TtH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picker" destination="5nR-ez-y8D" id="Olv-aW-cIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="3c4-G9-he3">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="0AX-at-oga" customClass="MapViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I8l-de-0vS"/>
+                        <viewControllerLayoutGuide type="bottom" id="e8E-WC-Vz3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1aE-pB-rTf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afe-sM-U2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="317"/>
+        </scene>
+    </scenes>
+</document>
