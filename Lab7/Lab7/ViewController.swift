@@ -29,6 +29,7 @@ AVAudioRecorderDelegate {
         if audioRecorder?.recording == false{
             playButt.enabled = false
             stopButt.enabled = true
+            
             audioRecorder?.record()
         }
     }
