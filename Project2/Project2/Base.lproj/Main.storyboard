@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="pTe-bH-nUg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="building" translatesAutoresizingMaskIntoConstraints="NO" id="pTe-bH-nUg">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="398"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qon-zZ-3hD">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qon-zZ-3hD">
                                 <rect key="frame" x="203" y="509" width="195" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="GNP-lA-4wx"/>
@@ -32,10 +32,10 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8ux-1x-QcY" kind="presentation" identifier="goToTable" id="OjV-oA-fFl"/>
+                                    <segue destination="8ux-1x-QcY" kind="presentation" identifier="gototable" id="Aku-9F-D9o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The ultimate guide to finding your way around the University of Colorado Boulder." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jh-Qo-yfo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The ultimate guide to finding your way around the University of Colorado Boulder." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jh-Qo-yfo">
                                 <rect key="frame" x="54" y="406" width="493" height="104"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="LeK-Ex-xTj"/>
@@ -132,6 +132,7 @@
             <objects>
                 <tableViewController id="8ux-1x-QcY" customClass="PlacesTableViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="TdI-sb-36q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -186,16 +187,16 @@
                                             <exclude reference="VaJ-ab-60F"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="DVj-Oa-gvI"/>
+                                            <exclude reference="Lzc-tK-hKv"/>
+                                            <exclude reference="y2h-5g-lrQ"/>
+                                            <exclude reference="ys7-KR-bnj"/>
                                             <exclude reference="5EB-U4-yJX"/>
                                             <exclude reference="5ws-Kx-mwA"/>
                                             <exclude reference="EJR-Sv-x0L"/>
                                             <exclude reference="anO-mF-DhY"/>
                                             <exclude reference="pf1-dP-BcN"/>
                                             <exclude reference="tRQ-94-qnh"/>
-                                            <exclude reference="DVj-Oa-gvI"/>
-                                            <exclude reference="Lzc-tK-hKv"/>
-                                            <exclude reference="y2h-5g-lrQ"/>
-                                            <exclude reference="ys7-KR-bnj"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -204,24 +205,22 @@
                                             <include reference="VaJ-ab-60F"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="DVj-Oa-gvI"/>
+                                            <include reference="Lzc-tK-hKv"/>
+                                            <include reference="y2h-5g-lrQ"/>
+                                            <include reference="ys7-KR-bnj"/>
                                             <include reference="5EB-U4-yJX"/>
                                             <include reference="5ws-Kx-mwA"/>
                                             <include reference="EJR-Sv-x0L"/>
                                             <include reference="anO-mF-DhY"/>
                                             <include reference="pf1-dP-BcN"/>
                                             <include reference="tRQ-94-qnh"/>
-                                            <include reference="DVj-Oa-gvI"/>
-                                            <include reference="Lzc-tK-hKv"/>
-                                            <include reference="y2h-5g-lrQ"/>
-                                            <include reference="ys7-KR-bnj"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="mainImage" destination="yLb-ma-ACc" id="Oba-UX-Aq4"/>
-                                    <outlet property="mainLabel" destination="VaJ-ab-60F" id="4fb-W6-pnw"/>
-                                    <outlet property="title" destination="VaJ-ab-60F" id="5hf-N1-6sO"/>
-                                    <segue destination="Pb8-vy-Fdr" kind="presentation" identifier="goToMap" id="bfD-93-Ttw"/>
+                                    <outlet property="mainImage" destination="yLb-ma-ACc" id="rfh-2y-vx3"/>
+                                    <outlet property="mainLabel" destination="VaJ-ab-60F" id="cKg-OD-w7d"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -233,7 +232,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QGU-qQ-dKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="144"/>
+            <point key="canvasLocation" x="571.5" y="486"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="yAN-bF-k7d">

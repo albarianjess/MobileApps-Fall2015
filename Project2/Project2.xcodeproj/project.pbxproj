@@ -16,7 +16,8 @@
 		7D7429D81BD4141800A8E286 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7429D71BD4141800A8E286 /* MapViewController.swift */; };
 		7D7429DA1BD4158300A8E286 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7429D91BD4158300A8E286 /* MapKit.framework */; };
 		7D7429DC1BD4158900A8E286 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7429DB1BD4158900A8E286 /* CoreLocation.framework */; };
-		7DE70A441BD9420900D566B5 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70A431BD9420900D566B5 /* Places.swift */; };
+		7DACFBB01BD96257002C7B2A /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACFBAF1BD96257002C7B2A /* Places.swift */; };
+		7DACFBB11BD96257002C7B2A /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACFBAF1BD96257002C7B2A /* Places.swift */; };
 		7DE70A461BD9437200D566B5 /* PlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70A451BD9437200D566B5 /* PlacesTableViewCell.swift */; };
 		7DE70A481BD9478C00D566B5 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE70A471BD9478C00D566B5 /* PlacesTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +46,7 @@
 		7D7429D71BD4141800A8E286 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7D7429D91BD4158300A8E286 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7D7429DB1BD4158900A8E286 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		7DE70A431BD9420900D566B5 /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		7DACFBAF1BD96257002C7B2A /* Places.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
 		7DE70A451BD9437200D566B5 /* PlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewCell.swift; sourceTree = "<group>"; };
 		7DE70A471BD9478C00D566B5 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,16 +94,16 @@
 		7D7429B41BD4132E00A8E286 /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				7D7429D71BD4141800A8E286 /* MapViewController.swift */,
+				7DE70A451BD9437200D566B5 /* PlacesTableViewCell.swift */,
+				7DE70A471BD9478C00D566B5 /* PlacesTableViewController.swift */,
+				7DACFBAF1BD96257002C7B2A /* Places.swift */,
 				7D7429B71BD4132E00A8E286 /* AppDelegate.swift */,
 				7D7429B91BD4132E00A8E286 /* ViewController.swift */,
 				7D7429BB1BD4132E00A8E286 /* Main.storyboard */,
 				7D7429BE1BD4132E00A8E286 /* Images.xcassets */,
 				7D7429C01BD4132E00A8E286 /* LaunchScreen.xib */,
 				7D7429B51BD4132E00A8E286 /* Supporting Files */,
-				7D7429D71BD4141800A8E286 /* MapViewController.swift */,
-				7DE70A431BD9420900D566B5 /* Places.swift */,
-				7DE70A451BD9437200D566B5 /* PlacesTableViewCell.swift */,
-				7DE70A471BD9478C00D566B5 /* PlacesTableViewController.swift */,
 			);
 			path = Project2;
 			sourceTree = "<group>";
@@ -236,8 +237,8 @@
 				7D7429BA1BD4132E00A8E286 /* ViewController.swift in Sources */,
 				7D7429D81BD4141800A8E286 /* MapViewController.swift in Sources */,
 				7D7429B81BD4132E00A8E286 /* AppDelegate.swift in Sources */,
-				7DE70A441BD9420900D566B5 /* Places.swift in Sources */,
 				7DE70A481BD9478C00D566B5 /* PlacesTableViewController.swift in Sources */,
+				7DACFBB01BD96257002C7B2A /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7429CE1BD4132E00A8E286 /* Project2Tests.swift in Sources */,
+				7DACFBB11BD96257002C7B2A /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

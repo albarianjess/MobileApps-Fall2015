@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Albarian. All rights reserved.
 //
 
+
 import UIKit
 
 class Places {
@@ -14,9 +15,9 @@ class Places {
     //var butt: UIButton
     
     /*init(title: String, photo: UIImage, butt: UIButton){
-        self.title = title
-        self.photo = photo
-        self.butt = butt
+    self.title = title
+    self.photo = photo
+    self.butt = butt
     }*/
     init(title: String, photo: UIImage){
         self.title = title

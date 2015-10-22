@@ -10,9 +10,9 @@ import UIKit
 
 class PlacesTableViewController: UITableViewController {
 
-    var places = [Places]()
-    let cellIdentifier = "PlacesTableViewCell"
     
+    let cellIdentifier = "PlacesTableViewCell"
+    var place = [Places]()
     
     
     
@@ -30,9 +30,15 @@ class PlacesTableViewController: UITableViewController {
     
     
     func loadPlacesInfo(){
-        let photo1 = UIImage(named: "cafes.jpg")!
-        let cellStuff = Places(title: "Cafes", photo: photo1)
-        places += [cellStuff]
+        
+        let photo1 = UIImage(named: "cafes")
+        let cellStuff = Places(title: "Cafes", photo: photo1!)
+        
+        let photo2 = UIImage(named: "building")
+        let cellStuff2 = Places(title: "Buildings", photo: photo2!)
+        //place.append(cellStuff)
+        //place.append(cellStuff2)
+        place += [cellStuff, cellStuff2]
     }
 
     
@@ -53,18 +59,34 @@ class PlacesTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return places.count
+        return place.count
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let place = places[indexPath.row]
+    /*override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let placez = place[indexPath.row]
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
         cell.mainLabel.text = place.title
         cell.mainImage.image = place.photo
 
+        return cell
+    }*/
+    
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        
+        let cellIdentifier = "PlacesTableViewCell"
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PlacesTableViewCell
+        
+        // Fetches the appropriate meal for the data source layout.
+        let stuff = place[indexPath.row]
+        
+        cell.mainLabel.text = stuff.title
+        cell.mainImage.image = stuff.photo
+        
         return cell
     }
 
