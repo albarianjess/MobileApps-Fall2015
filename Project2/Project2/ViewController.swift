@@ -16,11 +16,10 @@ class ViewController: UIViewController {
 
     
     
-    /*@IBAction func unwindSegue (segue:UIStoryboardSegue){
     
-    }*/
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    }
     
     //-----------------------------------------------
     // Do any additional setup after loading the view

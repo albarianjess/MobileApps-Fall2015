@@ -14,6 +14,9 @@ class PlacesTableViewController: UITableViewController {
     let cellIdentifier = "PlacesTableViewCell"
     var place = [Places]()
     
+    @IBAction func unwindSegue (segue:UIStoryboardSegue){
+        
+    }
     
     
     override func viewDidLoad() {
@@ -31,14 +34,23 @@ class PlacesTableViewController: UITableViewController {
     
     func loadPlacesInfo(){
         
-        let photo1 = UIImage(named: "cafes")
-        let cellStuff = Places(title: "Cafes", photo: photo1!)
+        let photo1 = UIImage(named: "building")
+        let cellStuff1 = Places(title: "Buildings", photo: photo1!)
         
-        let photo2 = UIImage(named: "building")
-        let cellStuff2 = Places(title: "Buildings", photo: photo2!)
-        //place.append(cellStuff)
-        //place.append(cellStuff2)
-        place += [cellStuff, cellStuff2]
+        let photo2 = UIImage(named: "library")
+        let cellStuff2 = Places(title: "Libraries", photo: photo2!)
+        
+        let photo3 = UIImage(named: "cafes")
+        let cellStuff3 = Places(title: "Coffee", photo: photo3!)
+        
+        let photo4 = UIImage(named: "food")
+        let cellStuff4 = Places(title: "Food", photo: photo4!)
+        
+        let photo5 = UIImage(named: "cunightride")
+        let cellStuff5 = Places(title: "CU Night Ride", photo: photo5!)
+        
+        
+        place += [cellStuff1, cellStuff2, cellStuff3, cellStuff4, cellStuff5]
     }
 
     
