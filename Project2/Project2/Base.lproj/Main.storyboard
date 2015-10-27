@@ -194,7 +194,7 @@
                                                 <rect key="frame" x="8" y="8" width="384" height="45"/>
                                             </variation>
                                             <connections>
-                                                <segue destination="Pb8-vy-Fdr" kind="presentation" id="aak-hr-9Ar"/>
+                                                <segue destination="Pb8-vy-Fdr" kind="presentation" identifier="goToMap" id="aak-hr-9Ar"/>
                                             </connections>
                                         </button>
                                     </subviews>

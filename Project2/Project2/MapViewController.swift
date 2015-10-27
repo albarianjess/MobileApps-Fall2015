@@ -41,13 +41,32 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true) //animates changing the currently visible region
         
+        let locationNorlin = CLLocationCoordinate2D(
+            latitude: 40.008686,
+            longitude: -105.270882
+        )
         
-        /*let annotation = MKPointAnnotation() //create an annotation
-        annotation.coordinate=location //sets the coordinates of the annotation
-        annotation.title="Empire State Building" //sets the title of the annotation
-        annotation.subtitle="New York" //sets the subtitle of the annotation
+        
+        let annotation = MKPointAnnotation() //create an annotation
+        annotation.coordinate=locationNorlin //sets the coordinates of the annotation
+        annotation.title="Norlin Library" //sets the title of the annotation
+        annotation.subtitle = "Hours: 7:45am - 12am"
         mapView.addAnnotation(annotation) //adds the annotation to the map view
-        */
+        
+        
+        
+        let locationGemmill = CLLocationCoordinate2D(
+            latitude: 40.007960,
+            longitude: -105.264317
+        )
+        
+        
+        let annotation2 = MKPointAnnotation() //create an annotation
+        annotation2.coordinate=locationGemmill //sets the coordinates of the annotation
+        annotation2.title="Gemmill Library" //sets the title of the annotation
+        annotation2.subtitle = "Hours: 8am - 11pm"
+        mapView.addAnnotation(annotation2) //adds the annotation to the map view
+
 }
     
 
