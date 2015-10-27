@@ -1,15 +1,15 @@
 //
-//  FavoritesTests.swift
-//  FavoritesTests
+//  Lab8Tests.swift
+//  Lab8Tests
 //
-//  Created by Jessie Albarian on 10/18/15.
+//  Created by Jessie Albarian on 10/26/15.
 //  Copyright (c) 2015 Albarian. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class FavoritesTests: XCTestCase {
+class Lab8Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
