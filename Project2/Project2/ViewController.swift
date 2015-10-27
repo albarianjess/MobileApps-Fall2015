@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     //----------
-    // Variables
+    // Citations
     //----------
+    
+    //All images from places.colorado.edu
 
     
     

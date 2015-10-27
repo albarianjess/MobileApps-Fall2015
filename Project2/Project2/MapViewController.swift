@@ -68,21 +68,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(annotation2) //adds the annotation to the map view
 
 }
-    
 
-    
-   /* func changeMap(){
-        viewC.pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
-        
-        if row == 0 {
-            
-        } else if row == 1 {
-            
-        } else {
-            
-        }
-    }*/
-    
     //
     // if 'get current location' button is pressed, then override location variable and add
     /*locationManager.delegate=self
