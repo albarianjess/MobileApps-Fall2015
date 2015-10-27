@@ -43,14 +43,14 @@ class PlacesTableViewController: UITableViewController {
         let photo3 = UIImage(named: "cafes")
         let cellStuff3 = Places(title: "Coffee", photo: photo3!)
         
-        let photo4 = UIImage(named: "food")
-        let cellStuff4 = Places(title: "Food", photo: photo4!)
+        //let photo4 = UIImage(named: "food")
+        //let cellStuff4 = Places(title: "Food", photo: photo4!)
         
-        let photo5 = UIImage(named: "cunightride")
-        let cellStuff5 = Places(title: "CU Night Ride", photo: photo5!)
+        //let photo5 = UIImage(named: "cunightride")
+        //let cellStuff5 = Places(title: "CU Night Ride", photo: photo5!)
         
         
-        place += [cellStuff1, cellStuff2, cellStuff3, cellStuff4, cellStuff5]
+        place += [cellStuff1, cellStuff2, cellStuff3]
     }
 
     
