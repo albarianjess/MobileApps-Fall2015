@@ -8,11 +8,55 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
+    
+    //----------
+    // Variables
+    //----------
+    @IBOutlet weak var roundTripMiles: UITextField!
+    @IBOutlet weak var time: UILabel!
+
+    
+    
+    
+    //-----------------
+    // Main calculation
+    //-----------------
+    func calculation(){
+        var numFormatter = NSNumberFormatter()
+        numFormatter.numberStyle=NSNumberFormatterStyle.NoStyle
+
+        let miles = (roundTripMiles.text as NSString).floatValue
+        let commuteTime = miles/(20)
+        time.text = numFormatter.stringFromNumber(commuteTime)
+        //clearText()
+        //return commuteTime
+        
+    }
+
+
+
+    //------------------------------------------
+    // Calls function after textfield is entered
+    //------------------------------------------
+    func textFieldDidEndEditing(textField: UITextField) {
+        calculation()
+    }
+
+
+
+    //-------------------
+    // Dismisses keyboard
+    //-------------------
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        roundTripMiles.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
