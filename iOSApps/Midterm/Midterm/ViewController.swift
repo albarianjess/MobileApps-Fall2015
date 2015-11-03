@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //-----------------------------------
     @IBAction func doCalc(sender: AnyObject) {
         var numFormatter = NSNumberFormatter()
-        numFormatter.numberStyle=NSNumberFormatterStyle.NoStyle
+        numFormatter.numberStyle=NSNumberFormatterStyle.DecimalStyle
         
         
         let miles = (totalMiles.text as NSString).floatValue
