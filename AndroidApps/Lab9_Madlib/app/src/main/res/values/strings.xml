@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Lab9_Madlib</string>
+    <string name="title">Mad Lib</string>
+
+    <string name="button">Go</string>
+    <string name="madlib"></string>
+
+    <string name="toggle_on">cold</string>
+    <string name="toggle_off">hot</string>
+
+    <string name="radio1">helpless</string>
+    <string name="radio2">mysterious</string>
+    <string name="radio3">adventurous</string>
+
+    <string name="check1">blue</string>
+    <string name="check2">purple</string>
+    <string name="check3">green</string>
+    <string name="check4">yellow</string>
+
+    <string name="mood_image">Main Image</string>
+
+    <string name="name_textView">Name</string>
+    <string-array name="genre">
+        <item>heavy metal</item>
+        <item>country music</item>
+        <item>hip hop</item>
+    </string-array>
+</resources>
