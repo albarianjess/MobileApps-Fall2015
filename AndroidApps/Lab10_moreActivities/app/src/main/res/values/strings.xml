@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Lab10_moreActivities</string>
+
+    <string name="title">Brewery Finder</string>
+    <string name="crowd">Choose a crowd</string>
+    <string name="button">Search</string>
+
+    <string-array name="crowds">
+        <item>fancy</item>
+        <item>hungry</item>
+        <item>fun</item>
+        <item>chill</item>
+        <item>hippie</item>
+        <item>college</item>
+    </string-array>
+
+    <string name="mainImage">Craft Beer</string>
+
+</resources>
