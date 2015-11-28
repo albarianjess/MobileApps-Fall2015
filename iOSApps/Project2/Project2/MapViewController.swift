@@ -31,7 +31,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         )
         
         //mapView.mapType=MKMapType.Hybrid //hybrid with map and satellite
-        var status:CLAuthorizationStatus =
+        let status:CLAuthorizationStatus =
         CLLocationManager.authorizationStatus()
         if status==CLAuthorizationStatus.NotDetermined {
             locationManager.requestWhenInUseAuthorization() //ios8 and later only
@@ -81,9 +81,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     //-----------------------------------------------------------------
     // Called when the authorization status for the application changed
     //-----------------------------------------------------------------
-    func locationManager(manager: CLLocationManager!,
+    func locationManager(manager: CLLocationManager,
         didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-            println("didchangeauth")
+            print("didchangeauth")
             if status==CLAuthorizationStatus.AuthorizedWhenInUse {
                 locationManager.startUpdatingLocation() //starts the location
                 manager
@@ -95,8 +95,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     //--------------------------------------------
     // Called when a location cannot be determined
     //--------------------------------------------
-    func locationManager(manager: CLLocationManager!, didFailWithError
-        error: NSError!) {
+    func locationManager(manager: CLLocationManager, didFailWithError
+        error: NSError) {
             var errorType=String()
             if let clError=CLError(rawValue: error.code) {
                 if clError == .Denied {

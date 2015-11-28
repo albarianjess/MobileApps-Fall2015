@@ -177,6 +177,8 @@
 		7D7429AA1BD4132D00A8E286 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Albarian;
 				TargetAttributes = {
