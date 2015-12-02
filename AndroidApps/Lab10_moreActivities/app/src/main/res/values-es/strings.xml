@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Brewery Finder</string>
+    <string name="crowd">Choose a crowd</string>
+    <string name="button">Search</string>
+
+    <string-array name="crowds">
+        <item>f</item>
+        <item>h</item>
+        <item>fu</item>
+        <item>c</item>
+        <item>h</item>
+        <item>c</item>
+    </string-array>
+
+    <string name="mainImage">Craft Beer</string>
+</resources>

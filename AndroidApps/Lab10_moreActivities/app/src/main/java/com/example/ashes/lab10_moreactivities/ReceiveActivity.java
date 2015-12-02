@@ -31,10 +31,12 @@ public class ReceiveActivity extends AppCompatActivity {
         Intent intent = getIntent();
         brewery = intent.getStringExtra("breweryName");
         breweryURL = intent.getStringExtra("breweryURL");
-        System.out.println(brewery);
-        System.out.println(breweryURL);
+
+
         //update text view
         TextView messageView = (TextView) findViewById(R.id.textViewBeer);
-        messageView.setText("You should check out " + brewery);
+        //String message = getString(R.string.message);
+        //messageView.setText(message + " " + brewery);
+        //messageView.setText("You should check out " + brewery);
     }
 }
