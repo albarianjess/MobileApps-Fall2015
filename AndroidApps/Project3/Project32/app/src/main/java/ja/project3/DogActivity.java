@@ -1,9 +1,9 @@
 package ja.project3;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
-public class DogActivity extends AppCompatActivity {
+public class DogActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
