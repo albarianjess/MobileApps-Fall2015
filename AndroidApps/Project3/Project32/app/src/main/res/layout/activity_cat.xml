@@ -50,5 +50,4 @@
             android:id="@+id/textView4" />
     </LinearLayout>
 
-
 </RelativeLayout>
