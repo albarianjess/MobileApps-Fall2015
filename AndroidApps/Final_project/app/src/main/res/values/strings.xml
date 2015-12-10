@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Final_project</string>
+    <string name="Button">Go!</string>
+    <string name="thick">thick</string>
+    <string name="thin">thin</string>
+    <string name="crust">CRUST</string>
+</resources>
