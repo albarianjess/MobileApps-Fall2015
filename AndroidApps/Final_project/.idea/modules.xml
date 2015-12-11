@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
+<<<<<<< HEAD:AndroidApps/Final_project/.idea/modules.xml
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Final_project.iml" filepath="$PROJECT_DIR$/Final_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
+=======
+    <modules />
+>>>>>>> e7cc81cb2015f2c1742984fc65a033c88d4d83a6:AndroidApps/AnimalShelter/.idea/modules.xml
   </component>
 </project>

@@ -16,15 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CatActivity" />
-        <activity android:name=".DogActivity" />
-        <activity
-            android:name=".SmallActivity"
-            android:label="@string/title_activity_small"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="ja.project3.MainActivity" />
-        </activity>
+        <activity android:name=".DogActivity"></activity>
     </application>
 
 </manifest>
