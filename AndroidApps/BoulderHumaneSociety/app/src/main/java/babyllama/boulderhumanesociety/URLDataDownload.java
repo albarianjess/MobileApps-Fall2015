@@ -17,14 +17,13 @@ import java.net.URLConnection;
 
 public abstract class URLDataDownload extends AsyncTask<String, String, Void> {
 
-    //private ProgressDialog progressDialog = new ProgressDialog(CatActivity.this);
     protected ProgressDialog progressDialog = null;
     InputStream inputStream = null;
     String result = "";
 
 
     /**
-     * onPreExecute shows "Getting kitten info"
+     * onPreExecute shows "Getting adoption info"
      * before data is processed
      */
     protected void onPreExecute() {
@@ -37,6 +36,7 @@ public abstract class URLDataDownload extends AsyncTask<String, String, Void> {
             }
         });
     }
+
 
 
     /**

@@ -2,9 +2,7 @@ package babyllama.boulderhumanesociety;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -18,19 +16,29 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
 
-
-
+    //-------------------
+    // Button to cat page
+    //-------------------
     public void catPage(View view){
-
-
-        //----------------
-        //create an intent
-        //----------------
         Intent intent = new Intent(this, CatActivity.class);
         startActivity(intent);
     }
 
+    //-------------------
+    // Button to dog page
+    //-------------------
+    public void dogPage(View view){
+        Intent intent = new Intent(this, DogActivity.class);
+        startActivity(intent);
+    }
 
+    //----------------------------
+    // Button to small animal page
+    //----------------------------
+    public void smallPage(View view){
+        Intent intent = new Intent(this, SmallActivity.class);
+        startActivity(intent);
+    }
 
 
     @Override
@@ -41,14 +49,18 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+        //----------------------
+        // Bottom floating item:
+        // call humane society
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Call us: 303-442-4030", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

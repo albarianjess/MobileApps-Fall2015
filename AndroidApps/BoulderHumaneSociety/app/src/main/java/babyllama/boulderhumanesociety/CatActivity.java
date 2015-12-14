@@ -18,22 +18,25 @@ import org.json.JSONObject;
 public class CatActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat);
 
+
+
+        //----------------------------------------------
         // calls URLDataDownload subclass asynchronously
-        new URLDataDownloadCats().execute("http://52.32.184.198/humanesociety/data.json");
+        //----------------------------------------------
+        new URLDataDownloadCats().execute("http://52.32.184.198/humanesociety/catdata.json");
     }
+
 
     public class URLDataDownloadCats extends URLDataDownload {
 
         public URLDataDownloadCats() {
             progressDialog = new ProgressDialog(CatActivity.this);
         }
-
         /**
          * onPostExecute shows website data
          */
@@ -48,24 +51,24 @@ public class CatActivity extends AppCompatActivity {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-
-
-
-            //TextView messageView = (TextView) findViewById(R.id.textView2);
-
-            //prints entire JSON
+            // Test: prints entire JSON
             //messageView.setText(result);
-
         }
 
 
+
+        // creates "cat" objects which consist of the image
+        // and other info about a cat
         public void createCat(JSONObject cat){
 
+            // Heading "Cats available for Adoption"
+            TextView title = new TextView(CatActivity.this);
+
+            // Creates objects for cats
             ImageView image = new ImageView(CatActivity.this);
             TextView status = new TextView(CatActivity.this);
             TextView name = new TextView(CatActivity.this);
             TextView breed = new TextView(CatActivity.this);
-            TextView pedigree = new TextView(CatActivity.this);
             TextView personality = new TextView(CatActivity.this);
             TextView age = new TextView(CatActivity.this);
             TextView sex = new TextView(CatActivity.this);
@@ -73,10 +76,13 @@ public class CatActivity extends AppCompatActivity {
 
 
             try {
+                // Gets strings from JSON Array (See onPostExecute)
+                // Converts image url into base64
                 byte[] decodedString = Base64.decode(cat.getString("image"), Base64.DEFAULT);
                 Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
                 image.setImageBitmap(decodedByte);
 
+                //
                 status.setText(cat.getString("status").toUpperCase());
                 name.setText("Name: " + cat.getString("name"));
                 breed.setText("Breed: " + cat.getString("breed") + " " + cat.getString("pedigree"));
@@ -87,14 +93,19 @@ public class CatActivity extends AppCompatActivity {
 
                 //add formatting
                 id.setPadding(0, 0, 0, 25);
-                image.setMaxWidth(250);
-                image.setMaxHeight(250);
+
+                //image formatting
+                image.setMaxWidth(350);
+                image.setMaxHeight(350);
+
+                //text formatting
 
 
-                //status color
+                //status formatting
+                status.setTextSize(20);
                 if (cat.getString("status").toLowerCase().equals("on hold")){
                     status.setTextColor(Color.parseColor("#303F9F"));
-                    
+
                 } else {
                     status.setTextColor(Color.parseColor("#EF8200"));
                 }
@@ -103,6 +114,7 @@ public class CatActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+            // Creates views for each cat
             LinearLayout cats = (LinearLayout) findViewById(R.id.linearCats);
             cats.addView(image);
             cats.addView(status);
