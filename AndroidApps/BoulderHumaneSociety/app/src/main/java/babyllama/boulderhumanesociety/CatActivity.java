@@ -4,18 +4,27 @@ import android.app.ProgressDialog;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.LikeView;
+import com.facebook.share.widget.ShareButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 public class CatActivity extends AppCompatActivity {
+
 
 
     @Override
@@ -24,6 +33,8 @@ public class CatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cat);
 
 
+        // Initialize Facebook SDK
+        FacebookSdk.sdkInitialize(getApplicationContext());
 
         //----------------------------------------------
         // calls URLDataDownload subclass asynchronously
@@ -59,10 +70,7 @@ public class CatActivity extends AppCompatActivity {
 
         // creates "cat" objects which consist of the image
         // and other info about a cat
-        public void createCat(JSONObject cat){
-
-            // Heading "Cats available for Adoption"
-            TextView title = new TextView(CatActivity.this);
+        public void createCat(JSONObject cat) {
 
             // Creates objects for cats
             ImageView image = new ImageView(CatActivity.this);
@@ -73,6 +81,7 @@ public class CatActivity extends AppCompatActivity {
             TextView age = new TextView(CatActivity.this);
             TextView sex = new TextView(CatActivity.this);
             TextView id = new TextView(CatActivity.this);
+            LikeView like = new LikeView(CatActivity.this);
 
 
             try {
@@ -82,7 +91,10 @@ public class CatActivity extends AppCompatActivity {
                 Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
                 image.setImageBitmap(decodedByte);
 
-                //
+
+                like.setPadding(10, 10, 10, 10);
+
+                // Set text data
                 status.setText(cat.getString("status").toUpperCase());
                 name.setText("Name: " + cat.getString("name"));
                 breed.setText("Breed: " + cat.getString("breed") + " " + cat.getString("pedigree"));
@@ -91,19 +103,26 @@ public class CatActivity extends AppCompatActivity {
                 sex.setText("Sex: " + cat.getString("sex"));
                 id.setText("ID: " + cat.getString("code"));
 
-                //add formatting
-                id.setPadding(0, 0, 0, 25);
+
+                //text formatting
+                id.setPadding(0, 0, 0, 75);
 
                 //image formatting
                 image.setMaxWidth(350);
                 image.setMaxHeight(350);
 
                 //text formatting
-
+                status.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                name.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                breed.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                personality.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                age.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                sex.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                id.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
 
                 //status formatting
                 status.setTextSize(20);
-                if (cat.getString("status").toLowerCase().equals("on hold")){
+                if (cat.getString("status").toLowerCase().equals("on hold")) {
                     status.setTextColor(Color.parseColor("#303F9F"));
 
                 } else {
@@ -114,9 +133,25 @@ public class CatActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
 
+
             // Creates views for each cat
             LinearLayout cats = (LinearLayout) findViewById(R.id.linearCats);
-            cats.addView(image);
+
+
+            ShareLinkContent content = null;
+            try {
+                content = new ShareLinkContent.Builder()
+                        .setContentUrl(Uri.parse("https://www.boulderhumane.org/animals/adoption/"+cat.getString("id")))
+                        .setContentTitle("Adopt Me!")
+                        .build();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
+            ShareButton shareButton = new ShareButton(CatActivity.this);
+            shareButton.setShareContent(content);
+
             cats.addView(status);
             cats.addView(name);
             cats.addView(breed);
@@ -124,6 +159,8 @@ public class CatActivity extends AppCompatActivity {
             cats.addView(age);
             cats.addView(sex);
             cats.addView(id);
+            cats.addView(like);
+            cats.addView(shareButton);
 
         }
     }

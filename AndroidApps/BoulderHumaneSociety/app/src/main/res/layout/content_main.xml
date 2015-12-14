@@ -21,7 +21,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
-        android:id="@+id/logo" />
+        android:id="@+id/logo"
+        android:contentDescription="logo" />
+
+
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -55,7 +59,6 @@
             android:onClick="smallPage"
             android:layout_weight="1" />
     </LinearLayout>
-
 
 
 </RelativeLayout>

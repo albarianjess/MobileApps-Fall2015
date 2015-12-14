@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -87,14 +88,20 @@ public class DogActivity extends AppCompatActivity {
                 id.setText("ID: " + dog.getString("code"));
 
                 //add formatting
-                id.setPadding(0, 0, 0, 25);
+                id.setPadding(0, 0, 0, 75);
 
                 //image formatting
                 image.setMaxWidth(350);
                 image.setMaxHeight(350);
+                image.performClick();
 
                 //text formatting
-
+                status.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                name.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                breed.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                age.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                sex.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+                id.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
 
                 //status formatting
                 status.setTextSize(20);

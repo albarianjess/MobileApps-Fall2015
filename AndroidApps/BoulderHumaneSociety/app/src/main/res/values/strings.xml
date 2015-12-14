@@ -5,6 +5,6 @@
     <string name="action_settings">Settings</string>
     <string name="cats">Cats</string>
     <string name="catsHeading">Cats Available for Adoption</string>
-
+    <string name="facebook_app_id">151879151841515</string>
 
 </resources>
