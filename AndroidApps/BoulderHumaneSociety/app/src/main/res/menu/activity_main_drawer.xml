@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:autoLink="web|email|phone"
+    android:linksClickable="true">
 
     <group android:checkableBehavior="single">
         <item
@@ -12,12 +14,12 @@
             android:title="Donate" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_menu_manage"
             android:title="Volunteer" />
         <item
             android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Vet" />
+            android:icon="@drawable/ic_menu_share"
+            android:title="Vet Clinic" />
     </group>
 
     <item android:title="Communicate">

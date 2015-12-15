@@ -27,7 +27,6 @@ import org.json.JSONObject;
 
 public class CatActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
