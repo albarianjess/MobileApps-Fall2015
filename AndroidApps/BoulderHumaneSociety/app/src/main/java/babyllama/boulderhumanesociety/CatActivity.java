@@ -122,8 +122,8 @@ public class CatActivity extends AppCompatActivity {
                 id.setText("ID: " + cat.getString("code"));
 
                 //image formatting
-                image.setMaxWidth(350);
-                image.setMaxHeight(350);
+                //image.setWidth(350);
+                //image.setHeight(350);
                 image.setPadding(0, 75, 0, 0);
 
                 shareButton.setMaxWidth(100);

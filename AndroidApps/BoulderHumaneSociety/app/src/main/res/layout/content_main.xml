@@ -11,53 +11,58 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="babyllama.boulderhumanesociety.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     android:autoLink="web|email|phone"
     android:linksClickable="true">
 
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"
-        android:id="@+id/logo"
-        android:contentDescription="logo" />
 
-
-
-
-    <LinearLayout
-        android:orientation="horizontal"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="100dp"
-        android:layout_centerVertical="true">
+        android:layout_height="match_parent">
 
-        <Button
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cats"
-            android:id="@+id/catBtn"
-            android:onClick="catPage"
-            android:layout_weight="1" />
+            android:layout_gravity="center_horizontal|top">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dogs"
-            android:id="@+id/dogBtn"
-            android:onClick="dogPage"
-            android:layout_weight="1" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cats"
+                android:id="@+id/catBtn"
+                android:onClick="catPage"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Small Animals"
-            android:id="@+id/smallBtn"
-            android:onClick="smallPage"
-            android:layout_weight="1" />
-    </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dogs"
+                android:id="@+id/dogBtn"
+                android:onClick="dogPage"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Animals"
+                android:id="@+id/smallBtn"
+                android:onClick="smallPage"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="630dp"
+            android:layout_height="627dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/pup"
+            android:layout_gravity="center" />
+    </FrameLayout>
 
 
 </RelativeLayout>
