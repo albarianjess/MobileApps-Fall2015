@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import com.facebook.FacebookSdk;
 import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.LikeView;
 import com.facebook.share.widget.ShareButton;
 
@@ -24,7 +26,6 @@ import org.json.JSONObject;
 
 
 public class CatActivity extends AppCompatActivity {
-
 
 
     @Override
@@ -43,11 +44,13 @@ public class CatActivity extends AppCompatActivity {
     }
 
 
+
     public class URLDataDownloadCats extends URLDataDownload {
 
         public URLDataDownloadCats() {
             progressDialog = new ProgressDialog(CatActivity.this);
         }
+
         /**
          * onPostExecute shows website data
          */
@@ -67,10 +70,28 @@ public class CatActivity extends AppCompatActivity {
         }
 
 
+        public Bitmap StringToBitMap(String encodedString){
+            try {
+                byte [] encodeByte=Base64.decode(encodedString,Base64.DEFAULT);
+                Bitmap bitmap=BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
+                return bitmap;
+            } catch(Exception e) {
+                e.getMessage();
+                return null;
+            }
+        }
+
 
         // creates "cat" objects which consist of the image
         // and other info about a cat
         public void createCat(JSONObject cat) {
+
+
+            ShareLinkContent content = new ShareLinkContent.Builder()
+                    .setContentUrl(Uri.parse("https://www.boulderhumane.org/animals/adoption/dogs"))
+                    .setContentTitle("Adopt Me!")
+                    .build();
+
 
             // Creates objects for cats
             ImageView image = new ImageView(CatActivity.this);
@@ -81,7 +102,8 @@ public class CatActivity extends AppCompatActivity {
             TextView age = new TextView(CatActivity.this);
             TextView sex = new TextView(CatActivity.this);
             TextView id = new TextView(CatActivity.this);
-            LikeView like = new LikeView(CatActivity.this);
+            ShareButton shareButton = new ShareButton(CatActivity.this);
+            shareButton.setShareContent(content);
 
 
             try {
@@ -91,21 +113,14 @@ public class CatActivity extends AppCompatActivity {
                 Bitmap decodedByte = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
                 image.setImageBitmap(decodedByte);
 
-
-                like.setPadding(10, 10, 10, 10);
-
                 // Set text data
                 status.setText(cat.getString("status").toUpperCase());
-                name.setText("Name: " + cat.getString("name"));
+                name.setText(cat.getString("name"));
                 breed.setText("Breed: " + cat.getString("breed") + " " + cat.getString("pedigree"));
                 personality.setText("Personality: " + cat.getString("personality"));
                 age.setText("Age: " + cat.getString("age"));
                 sex.setText("Sex: " + cat.getString("sex"));
                 id.setText("ID: " + cat.getString("code"));
-
-
-                //text formatting
-                id.setPadding(0, 0, 0, 75);
 
                 //image formatting
                 image.setMaxWidth(350);
@@ -119,6 +134,9 @@ public class CatActivity extends AppCompatActivity {
                 age.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 sex.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 id.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+
+                //Facebook share button formatting
+                shareButton.setPadding(0, 0, 0, 50);
 
                 //status formatting
                 status.setTextSize(20);
@@ -135,38 +153,15 @@ public class CatActivity extends AppCompatActivity {
 
             // Creates views for each cat
             LinearLayout cats = (LinearLayout) findViewById(R.id.linearCats);
-
-            ShareLinkContent content =
-            StringBuilder sb = new StringBuilder();
-            try {
-                sb.append("https://www.boulderhumane.org/animals/adoption/").append(cat.getString("code"));
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-            
-            content = new ShareLinkContent.Builder()
-                    .setContentUrl(Uri.parse("https://www.boulderhumane.org/animals/adoption/"))
-                    .setContentTitle("Adopt Me!")
-                    .build();
-
-            ShareButton shareButton = new ShareButton(CatActivity.this);
-            shareButton.setShareContent(content);
-            shareButton.setMaxWidth(100);
-
             cats.addView(image);
-            cats.addView(status);
             cats.addView(name);
+            cats.addView(status);
             cats.addView(breed);
             cats.addView(personality);
             cats.addView(age);
             cats.addView(sex);
             cats.addView(id);
-            cats.addView(like);
             cats.addView(shareButton);
-
         }
     }
 }
-
-

@@ -11,6 +11,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.TextView;
+
 import com.facebook.FacebookSdk;
 
 import com.facebook.appevents.AppEventsLogger;
@@ -18,6 +21,7 @@ import com.facebook.share.widget.LikeView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
 
 //    @Override
@@ -59,7 +63,6 @@ public class MainActivity extends AppCompatActivity
         Intent intent = new Intent(this, SmallActivity.class);
         startActivity(intent);
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,17 +141,16 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_fb) {
+            WebView myWebView = new WebView(MainActivity.this);
+            myWebView.loadUrl("https://www.facebook.com/HumaneBoulder/");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
