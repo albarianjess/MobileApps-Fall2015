@@ -92,6 +92,7 @@ public class SmallActivity extends AppCompatActivity {
                 //image formatting
                 image.setMaxWidth(550);
                 image.setMaxHeight(550);
+                image.setPadding(0, 75, 0, 0);
 
                 //text formatting
                 status.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);

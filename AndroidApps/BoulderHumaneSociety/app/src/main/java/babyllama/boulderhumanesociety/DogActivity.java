@@ -93,7 +93,7 @@ public class DogActivity extends AppCompatActivity {
                 //image formatting
                 image.setMaxWidth(350);
                 image.setMaxHeight(350);
-                image.performClick();
+                image.setPadding(0, 75, 0, 0);
 
                 //text formatting
                 status.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);

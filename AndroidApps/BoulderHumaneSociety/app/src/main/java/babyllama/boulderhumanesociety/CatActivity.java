@@ -125,6 +125,10 @@ public class CatActivity extends AppCompatActivity {
                 //image formatting
                 image.setMaxWidth(350);
                 image.setMaxHeight(350);
+                image.setPadding(0, 75, 0, 0);
+
+                shareButton.setMaxWidth(100);
+                shareButton.setMaxHeight(100);
 
                 //text formatting
                 status.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
@@ -134,9 +138,6 @@ public class CatActivity extends AppCompatActivity {
                 age.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 sex.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
                 id.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
-
-                //Facebook share button formatting
-                shareButton.setPadding(0, 0, 0, 50);
 
                 //status formatting
                 status.setTextSize(20);
