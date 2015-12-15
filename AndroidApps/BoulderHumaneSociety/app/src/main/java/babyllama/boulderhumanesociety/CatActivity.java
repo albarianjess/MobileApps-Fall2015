@@ -124,7 +124,6 @@ public class CatActivity extends AppCompatActivity {
                 status.setTextSize(20);
                 if (cat.getString("status").toLowerCase().equals("on hold")) {
                     status.setTextColor(Color.parseColor("#303F9F"));
-
                 } else {
                     status.setTextColor(Color.parseColor("#EF8200"));
                 }
@@ -137,21 +136,25 @@ public class CatActivity extends AppCompatActivity {
             // Creates views for each cat
             LinearLayout cats = (LinearLayout) findViewById(R.id.linearCats);
 
-
-            ShareLinkContent content = null;
+            ShareLinkContent content =
+            StringBuilder sb = new StringBuilder();
             try {
-                content = new ShareLinkContent.Builder()
-                        .setContentUrl(Uri.parse("https://www.boulderhumane.org/animals/adoption/"+cat.getString("id")))
-                        .setContentTitle("Adopt Me!")
-                        .build();
+                sb.append("https://www.boulderhumane.org/animals/adoption/").append(cat.getString("code"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
+            
+            content = new ShareLinkContent.Builder()
+                    .setContentUrl(Uri.parse("https://www.boulderhumane.org/animals/adoption/"))
+                    .setContentTitle("Adopt Me!")
+                    .build();
 
             ShareButton shareButton = new ShareButton(CatActivity.this);
             shareButton.setShareContent(content);
+            shareButton.setMaxWidth(100);
 
+            cats.addView(image);
             cats.addView(status);
             cats.addView(name);
             cats.addView(breed);
