@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Boulder Humane Society</string>
-    <string name="cats">Cats</string>
-    <string name="dogs">Dogs</string>
-    <string name="cat">Cat</string>
-    <string name="dog">Dog</string>
-    <string name="cat1">Name: Casper</string>
-    <string name="cat2">Name: Mocha</string>
-</resources>
